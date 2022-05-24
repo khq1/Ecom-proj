@@ -11,8 +11,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { Team1Component } from './components/team1/team1.component';
 import { Team2Component } from './components/team2/team2.component';
 import { Team3Component } from './components/team3/team3.component';
-import { MaterialModule} from './material/material.module'
-
+import { MaterialModule} from './material/material.module';
+import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component'
+import { DarkModeService } from 'angular-dark-mode';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { MaterialModule} from './material/material.module'
     MainComponent,
     Team1Component,
     Team2Component,
-    Team3Component
+    Team3Component,
+    DarkModeToggleComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,9 @@ import { MaterialModule} from './material/material.module'
     MatToolbarModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [
+  
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

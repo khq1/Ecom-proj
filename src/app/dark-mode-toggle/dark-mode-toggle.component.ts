@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { DarkModeService } from 'angular-dark-mode';
 @Component({
-  selector: 'app-toolbar',
-  templateUrl: './toolbar.component.html',
-  styleUrls: ['./toolbar.component.sass']
+  selector: 'app-dark-mode-toggle',
+  templateUrl: './dark-mode-toggle.component.html',
+  styleUrls: ['./dark-mode-toggle.component.sass']
 })
-export class ToolbarComponent implements OnInit {
+export class DarkModeToggleComponent implements OnInit {
   darkMode$ = this.darkModeService.darkMode$;
 
   constructor(private darkModeService: DarkModeService) {}
@@ -13,10 +13,10 @@ export class ToolbarComponent implements OnInit {
   onToggle(): void {
     this.darkModeService.toggle();
   }
- 
 
   // eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
   ngOnInit(): void {
   }
+
 
 }

@@ -1,11 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap')
 
-
-body 
+body
     margin: 0
-   
-/*Don't display default scrollbar*/     
+    
+     /*Style definitions for Dark-Mode-Toggle Service*/ 
+body:not(.dark-mode-preloading)
+    transition: all 0.3s linear
+
+body.dark-mode
+    background-color: #000000DE
+    color: #f5f5f5f5
+
+body.light-mode
+    background-color: #f5f5f5f5
+    color: #000000DE
+
+    /*Don't display default scrollbar*/     
 .mat-menu-panel::-webkit-scrollbar
     display: none
 html::-webkit-scrollbar
