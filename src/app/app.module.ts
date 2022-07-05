@@ -14,6 +14,7 @@ import { Team3Component } from './components/team3/team3.component';
 import { MaterialModule} from './material/material.module';
 import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component'
 import { DarkModeService } from 'angular-dark-mode';
+import { VideoBackgroundComponent } from './components/video-background/video-background.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { DarkModeService } from 'angular-dark-mode';
     Team1Component,
     Team2Component,
     Team3Component,
-    DarkModeToggleComponent
+    DarkModeToggleComponent,
+    VideoBackgroundComponent
   ],
   imports: [
     BrowserModule,

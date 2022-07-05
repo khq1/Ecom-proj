@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DarkModeService } from 'angular-dark-mode';
 @Component({
   selector: 'app-toolbar',
@@ -6,6 +6,8 @@ import { DarkModeService } from 'angular-dark-mode';
   styleUrls: ['./toolbar.component.sass']
 })
 export class ToolbarComponent implements OnInit {
+@Input()
+  title!:string;
   darkMode$ = this.darkModeService.darkMode$;
 
   constructor(private darkModeService: DarkModeService) {}
